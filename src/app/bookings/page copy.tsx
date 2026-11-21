@@ -202,7 +202,7 @@ export default function BookingPage() {
                     {times.map((t) => (
                       <button
                         key={t}
-                        onClick={() => setSelectedTime(t)}
+                        onClick={() => setSelectedTime(t as any)}
                         className="border border-[#006bff] text-[#006bff] font-semibold py-2.5 rounded-md hover:bg-[#006bff] hover:text-white text-[14px]"
                       >
                         {t}
